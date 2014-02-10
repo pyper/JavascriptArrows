@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Untitled Document</title>
+
+<script language="JavaScript" src="dependencies/wz_jsgraphics.js"></script>
+<script language="JavaScript" src="draw.js"></script>
+
+<script type="text/javascript">
+
+    function test()
+    {
+        var draw = new Draw(document.getElementById('canvas'));
+
+        draw.drawLine(100, 0, 400, 100);
+        draw.drawSingleHeadedArrow(100, 100, 400, 200);
+        draw.drawDoubleHeadedArrow(100, 200, 400, 300);
+        draw.drawSolidHeadedArrow(100, 300, 400, 400);
+        draw.drawSolidDoubleHeadedArrow(100, 400, 400, 500);
+        
+        draw.drawSquareLine(100, 500, "vertical", 400, 600, "horizontal");
+        draw.drawSquareLine(100, 700, "horizontal", 400, 800, "vertical");
+        draw.drawSquareLine(100, 800, "vertical", 400, 900, "vertical");
+        draw.drawSquareLine(100, 900, "horizontal", 400, 1000, "horizontal");
+        
+        draw.drawSquareLineArrow(100, 1050, "horizontal", 400, 1100, "horizontal");
+        
+        draw.drawSolidHeadedSquareLineArrow(100, 1150, "horizontal", 400, 1200, "horizontal");
+        
+        draw.drawDoubleHeadedSquareLineArrow(100, 1250, "horizontal", 400, 1300, "horizontal");
+        
+        draw.drawSolidDoubleHeadedSquareLineArrow(100, 1350, "horizontal", 400, 1400, "horizontal");
+    }
+
+</script>
+
+<body onload="test()">
+<div id="canvas"></div>
+<br/>
+<br/>
+<br/>
+<br/>
+</body>
+</html>
